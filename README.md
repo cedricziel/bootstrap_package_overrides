@@ -31,7 +31,7 @@ To see this example, include the ``'Sample Bootstrap Package Overrides - LESS co
 
 If you feel confident with the bootstrap_package theme, take this example and adjust your variables.
 
-Configuration: [Configuration/TypoScript/OverrideLessFile/constants.txt]()
+Configuration: [Configuration/TypoScript/OverrideLessFile/constants.txt](Configuration/TypoScript/OverrideLessFile/constants.txt)
 
 ### Example: Override less theme file completely
 
@@ -39,4 +39,4 @@ This example replaces the original less file. - Again it's an easy task with LES
 
 Include the TypoScript template ``'Sample Bootstrap Package Overrides - Override Less file'``.
 
-Configuration: [Configuration/TypoScript/OverrideLessFile/setup.txt]()
+Configuration: [Configuration/TypoScript/OverrideLessFile/setup.txt](Configuration/TypoScript/OverrideLessFile/constants.txt)
