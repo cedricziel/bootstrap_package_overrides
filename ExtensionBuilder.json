@@ -1,0 +1,37 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Sample extension to show how to easily extend the bootstrap_package.\n\nPrimary motivation: We cannot incorporate all your cool suggestions to extend the bootstrap_package",
+        "emConf": {
+            "category": "templates",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "6.2",
+            "version": "0.0.1"
+        },
+        "extensionKey": "bootstrap_package_overrides",
+        "name": "Sample Bootstrap Package Overrides",
+        "originalExtensionKey": "",
+        "persons": [
+            {
+                "company": "",
+                "email": "cedric@cedric-ziel.com",
+                "name": "Cedric Ziel",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "CedricZiel"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2014-12-05 11:18",
+        "extension_builder_version": "6.2.0",
+        "be_user": " (1)"
+    }
+}

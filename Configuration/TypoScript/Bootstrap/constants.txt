@@ -1,0 +1,14 @@
+# Actually literally anything you need to do,
+# is to set less variables
+plugin.bootstrap_package {
+    settings {
+        less {
+            # cat=bootstrap package: styling/301/body-bg; type=string; label=@body-bg: Background color for `<body>`.
+            body-bg = #000
+            # cat=bootstrap package: styling/301/text-color; type=string; label=@text-color: Global text color on `<body>`.
+            text-color = red
+            # cat=bootstrap package: styling/301/link-color; type=string; label=@link-color: Global textual link color.
+            link-color = yellow
+        }
+    }
+}

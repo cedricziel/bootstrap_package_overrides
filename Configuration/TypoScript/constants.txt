@@ -1,0 +1,4 @@
+##################################
+#### BOOTSTRAP LESS CONSTANTS ####
+##################################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package_overrides/Configuration/TypoScript/Bootstrap/constants.txt">
