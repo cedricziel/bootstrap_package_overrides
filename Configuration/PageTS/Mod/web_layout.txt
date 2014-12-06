@@ -1,0 +1,9 @@
+########################
+#### CUSTOM BACKENDLAYOUTS
+####
+#### Since TYPO3 6.2, it is possible to add all TSConfig files
+#### residing in a specific folder. Be aware that this is not the only
+#### place to edit for a new layout - it only feeds the BackendLayout selector
+#### in the backend.
+########################
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:bootstrap_package_overrides/Configuration/PageTS/Mod/WebLayout/BackendLayouts" extensions="txt">

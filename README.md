@@ -40,3 +40,16 @@ This example replaces the original less file. - Again it's an easy task with LES
 Include the TypoScript template ``'Sample Bootstrap Package Overrides - Override Less file'``.
 
 Configuration: [Configuration/TypoScript/OverrideLessFile/setup.txt](Configuration/TypoScript/OverrideLessFile/constants.txt)
+
+### Example: Include a custom backend layout with a custom template
+
+You definately will want to implement your own Page Templates. The bootstrap_package implements a custom ``Backend Layout Data Provider``. As there can only be one of those (Highlander syndrome!), you need to hook into it. The given DataProvider retrieves its configuration from a Page TSConfig array.
+
+Now to implement a custom layout, you need to follow these steps:
+
+* Add some Page TSConfig containing the **BackendLayout** to configure the layout-selector in the page properties. (I do forcefully add TSConfig via [ext_localconf.php](ext_localconf.php) so my BackendLayout is always available, when the extension is installed). Located at [Configuration/PageTS/Mod/web_layout.txt](Configuration/PageTS/Mod/web_layout.txt) and the referenced files..
+* Add some TypoScript to enable the new fluid template and render it in the frontend when my new layout is selected [Configuration/TypoScript/setup.txt](Configuration/TypoScript/setup.txt)
+
+You need to include the ``'Bootstrap Package Overrides - General'`` TypoScript template to make the frontend rendering work. (Imagine you would need a different frontend output at different subtrees while keeping the same backend layout. This is really flexible)
+
+Due to restrictions of the DataProvider, the backend layouts have to be prefixed with ``bootstrap_package__``.

@@ -1,0 +1,11 @@
+# Backend Layout Override
+page.10 {
+    file.stdWrap.cObject = CASE
+    file.stdWrap.cObject {
+        # References the layout name from TSConfig (bootstrap_package_overrides__example_override)
+        # TODO: Check DataProvider if prefix is neccessary
+        bootstrap_package__example_override = TEXT
+        bootstrap_package__example_override.value = EXT:bootstrap_package_overrides/Resources/Private/Templates/Page/Default.html
+        bootstrap_package__example_override.insertData = 1
+    }
+}
