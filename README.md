@@ -9,7 +9,7 @@ This extension is strongly oppinionated. Mostly because I think it's time for an
 
 ## Remarks regarding the template extension pattern
 
-We generally consider it an anti-pattern to store most settings in a TypoScript template in the target database. To have an easily reproducable environment (or a starter extension for new projects) you will definately want to place your overrides in an extension and **NOT** in the DB or in fileadmin.
+We generally consider it an anti-pattern to store most settings in a TypoScript template in the target database. To have an easily reproducable environment (or a starter extension for new projects) you will definitely want to place your overrides in an extension and **NOT** in the DB or in fileadmin.
 
 Configuration and templates are **system data** that should not be seen or touched by anybody else except the developers. If you have a workflow that is based on a monolithic fileadmin/template directory - welcome to the 21st century: There's extensions that can carry all of your stuff.
 
@@ -19,7 +19,7 @@ The example library is meant to be growing over time. You may request a new exam
 
 ## LESS preprocessor overrides
 
-LESS is a flexible CSS preprocessor that allows you to put variables and further logic in your CSS code. You should definately be using a CSS preprocessor, again it's the 21st century and we're not back in the 90s.
+LESS is a flexible CSS preprocessor that allows you to put variables and further logic in your CSS code. You should definitely be using a CSS preprocessor, again it's the 21st century and we're not back in the 90s.
 
 If you need to persistently override less variables, you're much much faster and resilient to human errors when those come from a file.
 
@@ -43,7 +43,7 @@ Configuration: [Configuration/TypoScript/OverrideLessFile/setup.txt](Configurati
 
 ### Example: Include a custom backend layout with a custom template
 
-You definately will want to implement your own Page Templates. The bootstrap_package implements a custom ``Backend Layout Data Provider``. As there can only be one of those (Highlander syndrome!), you need to hook into it. The given DataProvider retrieves its configuration from a Page TSConfig array.
+You will definitely want to implement your own Page Templates. The bootstrap_package implements a custom ``Backend Layout Data Provider``. As there can only be one of those (Highlander syndrome!), you need to hook into it. The given DataProvider retrieves its configuration from a Page TSConfig array.
 
 Now to implement a custom layout, you need to follow these steps:
 
